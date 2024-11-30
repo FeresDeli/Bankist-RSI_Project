@@ -19,7 +19,10 @@
   padding: 0;
   box-sizing: inherit;
 }
-
+ 
+.hamburger{
+  display: none;
+}
 html {
   font-size: 62.5%;
   box-sizing: border-box;
