@@ -501,7 +501,9 @@ h4 {
   grid-template-columns: 6.5rem 1fr;
   column-gap: 2rem;
 }
-
+.mobile_display{
+  display: none;
+}
 .testimonial__photo {
   grid-row: 1 / span 2;
   width: 6.5rem;
@@ -671,4 +673,274 @@ h4 {
   color: #bbb;
   font-size: 1.5rem;
   font-weight: 400;
+}
+/*934px x 640px */
+
+@media (max-width: 934px) {
+.header{
+  padding-left: 0px;
+ padding-right: 0px;
+display: flex;
+}
+  .nav__link--btn:link,
+  .nav__link--btn:visited {
+    padding: 0.4rem 2rem;
+   }
+  
+.nav{
+  padding: 0px;
+  justify-content: space-around;
+}
+.nav__link:link, .nav__link:visited{
+  font-size: 1.4rem
+}
+.header__title{
+  width: 90%;
+ }
+.header__title h1{
+  font-size:3.5rem
+}
+.header__title h4{
+  font-size:1.5rem
+}
+.btn--text{
+  font-size: 1.2rem;
+}
+
+/*section 2*/
+.section{
+width: 80%;
+padding: 0;
+margin-right: 10%;
+margin-left: 10%;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+.section__title h2{
+  font-size: 1.4em;
+}
+.section__title h3{
+  font-size: 3rem;
+}
+.features {
+
+gap: 2rem; 
+ margin: 0 0rem;
+}
+.features__feature{
+  width: 100%;
+}
+.features__header{
+  width: 50%;
+}
+
+/*section 3*/
+.operations__tab-container .btn{
+  font-size :1.2rem;
+}
+.section__title{
+  margin: 0;
+  margin-top: 4rem;
+}
+.operations{
+  margin-top: 8rem;
+}
+/*section 4*/
+#section--3{
+  display: block;
+}
+ .section--sign-up{
+  background-color: transparent;
+}
+
+.section--sign-up .section__header{
+  color: #444;
+}
+.section--sign-up .btn{
+  font-size: 1.4rem;
+  color: white;
+  margin-bottom: 40px;
+}
+.modal__header{
+  font-size: 2.5rem;
+}
+
+.modal__form label{
+  font-size: 1.4rem;
+}
+}
+
+
+
+
+
+
+
+/*Tablette responsive design*/
+
+
+
+
+@media (max-width: 768px) {
+  .nav__links {
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%; 
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+  }
+
+  .nav__links.active {
+    display: flex; 
+    height: 50vh;
+    display: flex;
+
+    justify-content: center;
+  }
+
+  .nav {
+    position: relative;
+    justify-content: space-between;
+    width: 80%;
+  }
+
+  .nav.sticky{
+    background-color: white;
+    width: 100%;
+    padding-right: 10%;
+    padding-left: 10%;
+   }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 5px;
+    transition: 0.3s;
+  }
+  .hamburger.close div:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburger.close div:nth-child(2) {
+    opacity: 0; 
+  }
+
+  .hamburger.close div:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+  }
+
+
+/*hero page*/
+ 
+.header__title {
+  position: relative; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+ 
+.header__title{
+ 
+  width: 80%;
+}
+
+.header__title .header__img {
+  position: absolute; 
+  width: 100%;
+  opacity: 0.3; 
+  z-index: 1; 
+}
+/*section 2*/
+.features {
+  display: flex;
+  flex-direction: column;
+ 
+  }
+  .lazy-img{
+    filter: blur(0px);
+  }
+  .mobile_display{
+    display: flex;
+    flex-direction: column;
+  }
+  #hide_mobile{
+    display: none;
+  }
+
+/*section 3*/
+
+.operations__tab-container .btn{
+  font-size :1.2rem;
+  padding: 1.4rem;
+}
+.operations__header{
+  font-size: 1.6rem;
+}
+.operations__content--active p{
+  font-size: 1.2rem;
+}
+/*section 4*/
+.slider{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.testimonial__header ,.testimonial__name{
+  font-size: 1.8rem;
+}
+.testimonial__text,.testimonial__location{
+  font-size: 1.2rem;
+}
+
+/*footer*/
+.footer__nav{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer{
+  padding: 2rem 2rem
+}
+}
+
+ 
+
+@media (max-width: 480px) {
+  .nav {
+    padding: 0.5rem 1rem;
+  }
+  .nav__link--btn:link, .nav__link--btn:visited {
+    font-size: 1rem;
+    padding: 1rem;
+    width: 100%;
+}
+  .nav__link {
+    font-size: 0.9rem;
+  }
+
+  .nav__link--btn {
+    width: 90%; 
+    text-align: center;
+  }
+
+  .operations__tab-container .btn{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .operations__content--active{
+    display: flex;
+    flex-direction: column;
+  }
 }
