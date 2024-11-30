@@ -42,6 +42,14 @@ const handleHover = function (e, opacity) {
   }
 };
 
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('.nav__links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active'); // Toggle menu visibility
+  hamburger.classList.toggle('close'); // Toggle the "X" button
+});
+
 btnsOpenModal.forEach(btn => btn.addEventListener('click', openModal));
 
 btnCloseModal.addEventListener('click', closeModal);
