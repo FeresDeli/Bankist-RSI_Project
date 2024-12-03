@@ -166,7 +166,6 @@ sections.forEach(section => {
 const imgs = document.querySelectorAll('img[data-src]');
 const lazyLoad = function (entries, observer) {
   const [img] = entries;
-  console.log(img);
 
   if (!img.isIntersecting) return;
 
@@ -244,6 +243,3 @@ dotsCont.addEventListener('click', function (e) {
     slideNext();
   }
 });
-
-/////////////////////////////////
-document.addEventListener('DOMContentLoaded', () => console.log('Loaded'));
